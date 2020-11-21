@@ -150,6 +150,12 @@ let verify = await scrypta.verifyMessage(signed.pubkey, signed.signature, signed
 
 Ora che abbiamo teorizzato (e realizzato) una prima versione di blockchain-based 2FA basato bOTA (Block One Time Address) pubblicheremo la libreria all'interno di `npm` ed inizieremo a teorizzare le applicazioni pratiche con card (Authenticator APP) ed eventuali device fisici (ovvero l'xSID viene fisicamente sbloccato da un'azione e non da un'informazione *-password-*)
 
+## Possibili implementazioni di sicurezza
+
+Di sicuro potrebbe avere senso proteggere e firmare anche il messaggio iniziale di challenge in quanto un eventuale attaccante potrebbe chiedere all'utente attaccato di generare un codice, se riesce a recuperare la challenge ed il primo identificativo. 
+
+Inserire una firma lato server potrebbe risolvere il problema.
+
 ## Test e verifica
 
 Chiunque volesse verificare ed implementare la procedura può testare l'abstract installando le dipendenze e facendo partire la demo:

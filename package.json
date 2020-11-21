@@ -1,0 +1,22 @@
+{
+  "name": "scrypta-blockchain-2fa",
+  "version": "1.0.0",
+  "description": "PoC for a blockchain-based 2FA",
+  "main": "index.js",
+  "scripts": {
+    "abstract": "node abstract.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scryptachain/scrypta-blockchain-2fa.git"
+  },
+  "author": "turinglabs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scryptachain/scrypta-blockchain-2fa/issues"
+  },
+  "homepage": "https://github.com/scryptachain/scrypta-blockchain-2fa#readme",
+  "dependencies": {
+    "@scrypta/core": "^2.8.7"
+  }
+}

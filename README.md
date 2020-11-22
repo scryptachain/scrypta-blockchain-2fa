@@ -51,7 +51,7 @@ const xpub = 'xpub661MyMwAqRbcEo7pAok57j4ZyyGrb1RPodttRLWVMrJ5LKewW4Zngg3Cg3i3Xa
 Abbiamo quindi correttamente identificato il nostro utente e abbiamo la possibilità di generare, lato server, un infinito numero di indirizzi le cui chiavi private saranno in possesso solo e solamente da quell'utente (ovviamente non consideriamo il furto di credenziali per il momento).
 
 Identifichiamo a questo punto una serie di condizioni che devono necessariamente essere soddisfatte da una e dall'altra parte per la generazione degli indirizzi:
-- Definiamo un `service`: ovvero generiamo una stringa che identifica in modo univoco il servizio. Potrebbe essere il dominio, così come una stringa random. Per il momento devidiamo che il `service` sia appunto `Scrypta2FA`.
+- Definiamo un `service`: ovvero generiamo una stringa che identifica in modo univoco il servizio. Potrebbe essere il dominio, così come una stringa random. Per il momento decidiamo che il `service` sia appunto `Scrypta2FA`.
 - Definiamo una `challenge`: ovvero una stringa randomica generata *on-the-fly* che l'utente dovrà firmare.
 - Definiamo un blocco di riferimento, per sicurezza l'ultimo prodotto al momento della richiesta, così da avere un *time-frame* definito di validità ovvero il nostro codice sarà valido dal momento in cui viene effettuata la richiesta fino alla generazione di un nuovo blocco.
 
